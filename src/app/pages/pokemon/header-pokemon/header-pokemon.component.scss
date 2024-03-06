@@ -1,0 +1,36 @@
+.header-presentation {
+  background: linear-gradient(180deg, rgba(27,238,231,1) 0%, rgba(14,119,116,1) 93%);
+  padding: 10px;
+  border-radius: 15px 15px 0px 0px;
+
+  mat-card {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 6px 10px 0px 10px;
+
+    .logo {
+      height: 100px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    mat-chip-listbox {
+      ::ng-deep .mdc-evolution-chip-set__chips {
+        justify-content: center;
+  
+        mat-chip-option {
+          color: white;
+          background-color: rgba(24, 24, 24, 0.6901960784);
+      
+          .mdc-evolution-chip__cell 
+          .mdc-evolution-chip__action 
+          .mdc-evolution-chip__text-label {
+            color: white !important;
+          }
+        }
+      }
+    }
+  }
+
+}

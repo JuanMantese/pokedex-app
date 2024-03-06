@@ -1,0 +1,9 @@
+<div class="header-presentation">
+  <mat-card>
+    <img class="logo" src='../../../assets/images/pokemon-logo.svg'/>
+
+    <mat-chip-listbox multiple aria-label="Fish selection" (change)="onTypeSelection($event)">
+      <mat-chip-option *ngFor="let item of typesRes" [value]="item">{{item}}</mat-chip-option>
+    </mat-chip-listbox>
+  </mat-card>
+</div>
